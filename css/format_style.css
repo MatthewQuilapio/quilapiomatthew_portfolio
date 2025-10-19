@@ -191,6 +191,7 @@ header {
     padding-left: 25px;
     padding-right: 250px;
     color: #6C63FF;
+	word-wrap: break-word;
 } 
 
 .about_paragraph {
@@ -434,4 +435,5 @@ section.projects a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 
