@@ -1,0 +1,437 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #f5f5f5; /* Light text */
+    line-height: 1.6;
+}
+
+.site {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #1E1E1E; /* Flat dark */
+  padding: 15px 40px;
+  border-bottom: 2px solid #6C63FF; /* Accent purple line */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #6C63FF; /* Flat purple branding */
+  text-decoration: none;
+}
+
+/* Base link styles */
+.header nav a {
+  margin-left: 25px;
+  position: relative;
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+/* Underline effect */
+.header nav a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: width 0.2s ease, background-color 0.2s ease;
+}
+
+/* Odd links hover + active */
+.header nav a:nth-child(odd):hover,
+.header nav a:nth-child(odd).active {
+  color: #39C5BB;
+}
+.header nav a:nth-child(odd):hover::after,
+.header nav a:nth-child(odd).active::after {
+  width: 100%;
+  background-color: #39C5BB;
+}
+
+/* Even links hover + active */
+.header nav a:nth-child(even):hover,
+.header nav a:nth-child(even).active {
+  color: #6C63FF;
+}
+.header nav a:nth-child(even):hover::after,
+.header nav a:nth-child(even).active::after {
+  width: 100%;
+  background-color: #6C63FF;
+}
+
+
+
+/* Main section */
+.main {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.padding-small {
+    padding: 10px;
+}
+
+.text-center {
+    text-align: left;
+}
+
+.social-center {
+    text-align: center;
+}
+
+#name {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #6C63FF;
+}
+
+/* Social icons */
+#social a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    color: #ffffff; /* Default Miku teal */
+}
+
+#social a:hover {
+    transform: scale(1.2);
+    color: #ffffff; /* Purple hover */
+}
+
+/* Resume button with gradient */
+.pill-button {
+    display: inline-block;
+    background: linear-gradient(90deg, #39C5BB, #6C63FF); /* Teal → Purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+.pill-button:hover {
+    background: linear-gradient(90deg, #6C63FF, #39C5BB); /* Purple → Teal */
+}
+
+.margin-right-medium {
+    margin-right: 15px;
+}
+
+/* Filter button style */
+.btn_filter {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #6C63FF; /* Purple */
+    color: #fff;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.btn_filter:hover {
+  background-color: #5348C7; /* Darker purple */
+}
+
+.btn_filter.active {
+  background-color: #39C5BB; /* Active = Miku teal */
+  color: white;
+}
+
+/* Project Items */
+.projects .view_item {
+    display: none;
+}
+
+.projects .view_item .vi_left {
+    margin-right: 25px;
+}
+
+.projects .view_item.show {
+    display: flex;
+    align-items: center;
+    border: 1px solid #6C63FF; /* Purple border */
+    background-color: #1E1E1E;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
+}
+
+/* About css */
+.about_content {
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 250px;
+    color: #6C63FF;
+} 
+
+.about_paragraph {
+    border-radius: 15px 40px 30px;
+    background-color: #1a1a1a;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #39C5BB;
+    
+}
+
+.about-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #00746D; /* teal background */
+      color: #eee;           /* purple text */
+      min-height: 70vh;
+      padding: 0 5%;
+    }
+
+.about_header {
+      flex: 1;
+      max-width: 600px;
+}
+
+.text_header_about {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.4;
+}
+
+.img_wrapper {
+   flex: 1;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+.img_wrapper img {
+      max-width: 75%;
+      height: auto;
+      border-radius: 50%;
+      
+}
+
+.paragraph-block {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a; /* teal background */
+      /*color: #6C63FF;            purple text */
+      min-height: 70vh;
+      padding: 0 5%;
+} 
+
+.about .paragraph-block. about_paragraph {
+		padding-top: 9rem;
+		padding-bottom: 9rem;
+	}
+
+/* button resume */
+.language_shape path {
+    background: linear-gradient(90deg, #39C5BB, #6C63FF);
+}
+
+/* Contact css */
+.contact_text {
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 5px;
+
+  /* Gradient main heading */
+  background: linear-gradient(90deg, #39C5BB, #6C63FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  letter-spacing: 2px;
+}
+
+.contact_title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #39C5BB;
+
+  /* subtle modern touch */
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+
+input[type=text], 
+input[type=email] {
+  width: 100%;
+  padding: 12px 18px;
+  margin: 10px 0;
+  font-size: 1rem;
+
+  color: #eee;
+  background: #1a1a1a; /* dark base */
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+
+  /* gradient border effect */
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder styling */
+input[type=text]::placeholder, 
+input[type=email]::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Hover effect */
+input[type=text]:hover, 
+input[type=email]:hover {
+  background-image: linear-gradient(#252525, #252525),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+}
+
+/* Focus effect */
+input[type=text]:focus, 
+input[type=email]:focus {
+  background-image: linear-gradient(#252525, #252525),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+  box-shadow: 0 0 12px rgba(57, 197, 187, 0.6),
+              0 0 20px rgba(108, 99, 255, 0.4);
+}
+
+textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 18px;
+  margin: 10px 0;
+  font-size: 1rem;
+  resize: vertical;
+
+  color: #eee;
+  background: #1a1a1a; /* dark base */
+  border: 2px solid transparent;
+  border-radius: 12px;
+  outline: none;
+
+  /* gradient border effect */
+  background-image: linear-gradient(#1a1a1a, #1a1a1a),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+
+  transition: all 0.3s ease;
+}
+
+/* Placeholder styling */
+textarea::placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+/* Hover effect */
+textarea:hover {
+  background-image: linear-gradient(#252525, #252525),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+}
+
+/* Focus effect */
+textarea:focus {
+  background-image: linear-gradient(#252525, #252525),
+                    linear-gradient(90deg, #39C5BB, #6C63FF);
+  box-shadow: 0 0 12px rgba(57, 197, 187, 0.6),
+              0 0 20px rgba(108, 99, 255, 0.4);
+}
+
+.submit_contact {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  
+
+  /* gradient background */
+  background: linear-gradient(90deg, #39C5BB, #6C63FF);
+  background-size: 200% 100%;
+  transition: all 0.4s ease;
+  box-shadow: 0 4px 15px rgba(57, 197, 187, 0.3),
+              0 4px 15px rgba(108, 99, 255, 0.2);
+}
+
+/* Hover effect */
+.submit_contact:hover {
+  background-position: 100% 0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(57, 197, 187, 0.5),
+              0 6px 20px rgba(108, 99, 255, 0.4);
+}
+
+/* Active (pressed) effect */
+.submit_contact:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 8px rgba(57, 197, 187, 0.4),
+              0 2px 8px rgba(108, 99, 255, 0.3);
+}
+
+/* link color */
+
+section.projects a:link {
+  color: #39C5BB;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+section.projects a:visited {
+  color: #39C5BB;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+section.projects a:hover {
+  color: #6C63FF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+section.projects a:active {
+  color: #6C63FF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+

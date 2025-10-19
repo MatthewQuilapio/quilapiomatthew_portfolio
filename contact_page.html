@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" data-react-helmet="lang">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Angelo Matthew Quilapio - Contact</title>
+        <link rel="stylesheet" href="\css\format_style.css" />
+        <script src="\js\contact_form.js" defer></script>
+    </head>
+    <body>
+        <div id="___gatsby">
+            <div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper">
+                <div class="site">
+                    <header>
+                        <nav class="header">
+                            <h1 aria-current="page" class="title">Portfolio</h1>
+                            <nav>
+                                <!--<a href="http://127.0.0.1:5500/main_page.html">Home<span aria-label="home"></span></a>-->
+                                <a href="index.html">Projects<span aria-label="work"></span></a>
+                                <a href="about_page.html">About<span aria-label="about"></span></a>
+                                <a aria-current="page" class="active" href="contact_page.html">Contact<span aria-label="contact"></span></a>
+                            </nav>   
+                        </nav>
+                    </header>
+                    <main class="contactpg">
+                        <div class="contact_header p-card h-fit w-full space-y-3 p-4 text-center xl:max-w-md">
+                            <h2 class="contact_text padding-small heading">CONTACT ME<span role="img" aria-label="folder"></span></h2>
+                            <p class="contact_title space-y-3 p-4">Let's build something great</p>
+                        </div>
+                        <div class="form">
+                        <form id="contact-form" class="mx-auto flex flex-col gap-4">
+                            <label for="i_name">Name</label>
+                            <input type="text" id="i_name" name="name" placeholder="Your name.." required>
+
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Gmail only" required>
+
+                            <label for="mess">Message</label>
+                            <textarea id="mess" name="message" rows="4" cols="50" placeholder="Your message.." required></textarea>
+
+                            <button type="submit" class="submit_contact" align="center">Send Message</button>
+                        </form>
+                        </div>
+                    
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
