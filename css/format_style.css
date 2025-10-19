@@ -189,7 +189,7 @@ header {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 25px;
-    padding-right: 250px;
+    padding-right: 25px;
     color: #6C63FF;
 } 
 
@@ -434,6 +434,7 @@ section.projects a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 
 
 
