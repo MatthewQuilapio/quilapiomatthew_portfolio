@@ -196,7 +196,7 @@ header {
 }
 
 /* Responsive layout for normal phones (≤600px) */
-@media (max-width: 600px) {
+@media (max-width: 350px) {
   .about_content {
     padding: 15px 20px;
     font-size: 0.95rem;
@@ -445,6 +445,7 @@ section.projects a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 
 
 
