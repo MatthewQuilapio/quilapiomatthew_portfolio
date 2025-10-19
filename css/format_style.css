@@ -185,24 +185,13 @@ header {
 
 /* About css */
 .about_content {
-  text-align: left;
-  padding: 20px;
-  color: #6C63FF;
-  word-wrap: break-word;
-  white-space: normal;   /* ensures text wraps naturally */
-  line-height: 1.7;
-  max-width: 800px;
-  margin: 0 auto;        /* centers text on desktop */
-}
-
-/* Responsive layout for normal phones (≤600px) */
-@media (max-width: 350px) {
-  .about_content {
-    padding: 15px 20px;
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: left;
-  }
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 250px;
+    color: #6C63FF;
+} 
 
 .about_paragraph {
     border-radius: 15px 40px 30px;
@@ -445,6 +434,7 @@ section.projects a:active {
   background-color: transparent;
   text-decoration: underline;
 }
+
 
 
 
